@@ -12,6 +12,8 @@ data = pd.read_csv('dataset.csv', ';')
 X = data.iloc[:, 0]
 Y = data.iloc[:, 1]
 plt.scatter(X, Y)
+plt.annotate(text = 'SRI AHMAD TSAQIF', xy = (12, 2800), fontsize = 15, color = 'red')
+plt.annotate(text = 'Made with PyPlot', xy = (12, 2200), fontsize = 13, color = 'red')
 plt.show()
 
 # Building the model
@@ -38,6 +40,8 @@ Y_pred = m*X + c
 
 plt.scatter(X, Y)
 plt.plot([min(X), max(X)], [min(Y_pred), max(Y_pred)], color='red')  # regression line
+plt.annotate(text = 'SRI AHMAD TSAQIF', xy = (12, 650), fontsize = 15, color = 'red')
+plt.annotate(text = 'Made with PyPlot', xy = (12, 0), fontsize = 13, color = 'red')
 plt.show()
 
 urut = data.sort_values(['Experience'])
