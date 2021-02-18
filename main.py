@@ -8,7 +8,7 @@ from sklearn.metrics import *
 plt.rcParams['figure.figsize'] = (12.0, 9.0)
 
 # Preprocessing input data
-data = pd.read_csv('C:/Users/gante/Documents/KAMPUS/AI - KECERDASAN BUATAN/no1.csv', ';')
+data = pd.read_csv('dataset.csv', ';')
 X = data.iloc[:, 0]
 Y = data.iloc[:, 1]
 plt.scatter(X, Y)
